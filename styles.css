@@ -1,0 +1,88 @@
+:root {
+	--background: #ffffff;
+	--alternate-background: rgb(231, 231, 231);
+	--text: #000000;
+	--accent: #6681c7;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: var(--background);
+}
+
+#app {
+	max-width: 1000px;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#noteForm {
+	width: 100%;
+	display: flex;
+}
+
+#noteInput {
+	width: 100%;
+	padding: 10px;
+	margin-right: 10px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+
+button {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--accent);
+	color: white;
+	cursor: pointer;
+
+	transition: filter 0.125s linear;
+}
+
+button:hover {
+	filter: brightness(80%);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	padding: 10px;
+	margin-top: 10px;
+	background-color: var(--alternate-background);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+li input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.note {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.noteText {
+	width: 100%;
+}
+
+.note button {
+	margin: 0 10px;
+}
